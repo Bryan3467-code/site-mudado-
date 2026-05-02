@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="site.css">
+    <script src="site.js"></script>
+    <title>regulamento trote sólidario</title>
+</head>
+<body>
+    <nav class="menu"><!--menu de navegação-->
+        <div class="menu-container">
+           <a href="index.html" class="menu-logo">trote 2026</a>
+           <ul class="lista">
+            <li> <a href="index.html">Inicio</a> </li>
+            <li> <a href="introducao.html">Introdução</a> </li>
+            <li> <a href="formato.html">Formato</a> </li>  
+            <li> <a href="equipes.html">Equipes</a></li>         
+            <li> <a href="provas.html">Provas & Metas</a> </li> 
+            <li> <a href="integracao.html">Integração</a> </li>
+            <li> <a href="cronograma.html">Cronograma</a> </li>
+            <li> <a href="calculadora.html">Calculadora</a> </li>
+
+           </ul>
+           <img src="unifacef - Copia.jpg" alt="nao apareceu">
+        </div>
+    </nav>
+     <div class="grande">
+    <main class="principal">
+      <section>
+          <h3>Simulador de Metas Batidas</h3>
+         <div>
+            <div class="form-group">
+               <label for="">Selecione a cor do equipe</label>
+                <select id="cor">
+                  <option value="amarela">Amarela</option>
+                  <option value="cinza">cinza</option>
+                  <option value="laranja">laranja</option>
+                  <option value="marrom">marrom</option>
+                   <option value="preta">Preta</option>
+                </select>
+            </div>
+            <div class="form-group"> 
+               <label for="Kit de alimentação"> kit de Akimentação</label>
+               <input type="number" id="kitalimentacao" min="0">
+                 
+            </div>
+              <div class="form-group">
+                    <label for="suplementos"> Suplementos </label>
+                    <input type="number" id="qtlatas" min="0">
+              </div>
+                <div class="form-group">
+                    <label for="leite (60 caixas)">leite (60 caixas)  </label>
+                    <input type="number" id="leite" min="0">
+              </div>
+                 <div class="form-group">
+                    <label for="Doação de sangue">Doação de sangue (30 doações)</label>
+                    <input type="number" id="Doação de sangue" min="0">
+              </div>
+         </div>
+      </section>
+       <section >
+         <h3><strong>🧮 Simulador de Pontos</strong></h3>
+      <div>
+         <div class="form-group">
+            <label > Arroz (5kg) - 10 pts</label>
+            <input type="number" id="qtdeArroz" min="0">
+         </div>
+         <div class="form-grid">
+            <label > Feijão (2kg) - 8 pts</label> <!--rótulo da caixa de entrada-->
+            <input type="number" id="qtdeFeijao" min="0"><!--caixa de entrada-->
+         </div>
+              <div class="form-grid">
+            <label > Macarrão (500g) - 2 pts</label>
+            <input type="number" id="qtdeMacarrao" min="0">
+         </div>
+                <div class="form-grid">
+            <label > óleo de Soja (1L) - 4 pts</label>
+            <input type="number" id="qtdeOleo" min="0">
+         </div>
+      </div>
+       </section>
+       <section>
+          <button onclick="calcular()">Calcular total de Equipes</button>
+         <div  id="resultado"    class="resutado-box">
+            Pontuação Total: 0.0 pontos
+         </div>
+       </section>
+        
+       
+      
+
+     </main>
+   
+<footer>
+    <p>Coordenação Trote solidário 2026:trotesolidario@unifacef.br</p>
+    <p>Uni-FACEF-centro Universitário Municipal de Franca</p>
+    <p><strong>Telefone:</strong> 0800 940 4688 / (16) 3713-4688</p>
+    <p><strong>WhatsApp UniFACEF: </strong>(16) 99989-4642</p>
+   </footer>
+   </div>
+</body>
+</html>
