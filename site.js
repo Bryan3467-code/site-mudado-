@@ -82,5 +82,17 @@ function calcular(){
             else {
                 pontos = pontos + (leite * (5000/metaleite))
             }
+             let apresentacao = Number(document.getElementById("apresentacao").value)
+            let time = Number(document.getElementById("time").value)
+            if(time <= 3){
+                pontos = pontos + apresentacao
+            }
+            else if(time > 3){
+                pontos = pontos + apresentacao - 150
+            }
+            let mascote = Number(document.getElementById("mascote").value)
+            pontos =pontos + mascote 
+            let caracteri = Number(document.getElementById("caracteri").value)
+           
            document.getElementById("resultado").innerText = "pontuação total :" + pontos.toFixed(2) + "pontos"
         }
